@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    position: relative;
+    background-color: snow;
+}
+
+.heading{
+    position: absolute;
+    top: 0;
+    font-family: 'Darumadrop One', monospace;
+    font-size: 4rem;
+    text-align: center;
+    width: 100vw;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.board{
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    gap: 1em;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.square{
+    font-weight: bolder;
+    font-size: 5rem;
+    width: 15vmin;
+    height: 15vmin;
+    display: flex;
+    font-family: sans-serif;
+    color: hotpink;
+    background-color: skyblue;
+    justify-content: center;
+    align-items: center;
+}
+
+.left, .right{
+    font-family: sans-serif;
+    font-size: 4rem;
+    font-weight: bolder;
+    text-align: center;
+    width: 30vw;
+}
+
+.left{
+    color: hotpink;
+}
+
+.right{
+    color: transparent;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+.background{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 40%;
+}
+
+.message{
+    color: snow;
+    position: absolute;
+    top: 5vh;
+    width: 100%;
+    text-shadow: 0px 0px 20px gold;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 5rem;
+    font-family: monospace;
+}
+
+.message > div{
+    color: snow;
+    text-shadow: 0px 0px 20px gold;
+    display: flex;
+    justify-content: center;
+    font-size: 5rem;
+    font-family: monospace;
+    margin: 5vh
+}
+
+.restart{
+    margin: auto;
+    height: 30vh;
+    width: fit-content;
+    margin-top: 5vh;
+}
+
+.restart:hover{
+    cursor: pointer;
+}
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    width: 100vw;
+    background-color: #e5e5e5;
+    text-align: center;
+}
